@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pause — A song for you</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-dark">
+  <!-- No hearts on this page -->
+
+  <div class="player" aria-label="Music player: Velha Infância">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1mSxbLW7fKABfeY4lGpg0E?utm_source=generator" width="280" height="80" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </div>
+
+  <main>
+    <section class="pause" aria-labelledby="pause-title">
+      <div class="pause-inner">
+        <h1 id="pause-title">Remember I had a song to dedicate to you from a singer called Manuel, that I would only tell you in an important date? Well this is the time</h1>
+
+        <div class="qr-area">
+          <img class="qr-img" alt="QR code to open the song on Spotify" width="240" height="240" src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fopen.spotify.com%2Ftrack%2F5QSYWruQQ7kBCHScI4xJ9g%3Fsi%3D6657daaf63934b48" />
+        </div>
+
+        <button id="nextPause" class="next-circle" aria-label="Go to the next section" title="Go to the next section">
+          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+            <path d="M8 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- No hearts script here on purpose -->
+  <script>
+    // Placeholder: wired for future action when you define the next step
+    document.getElementById('nextPause')?.addEventListener('click', (e) => {
+      window.location.href = 'reveal.html';
+    });
+  </script>
+</body>
+</html>
+
+

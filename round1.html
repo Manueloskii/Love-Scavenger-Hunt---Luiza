@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Round 1 — Favorite Color</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+
+  <div class="player" aria-label="Music player: Velha Infância">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1mSxbLW7fKABfeY4lGpg0E?utm_source=generator" width="280" height="80" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </div>
+
+  <main>
+    <section class="quiz" aria-labelledby="q-title">
+      <div class="quiz-inner">
+        <h1 id="q-title">What is your boyfriend's favorite color?</h1>
+        <p class="hint">(Hint: you like this color when I wear it)</p>
+
+        <div id="message" class="message" role="status" aria-live="polite"></div>
+
+        <div id="choices" class="choices" aria-label="Choose the correct color">
+          <!-- Tiles injected by quiz.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- No hearts background on this page: omit script.js -->
+  <script src="quiz.js" defer></script>
+</body>
+  </html>
+
+

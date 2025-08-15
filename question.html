@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>When did we first talk?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- White page, no hearts -->
+  <div class="player" aria-label="Music player: Velha Infância">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1mSxbLW7fKABfeY4lGpg0E?utm_source=generator" width="280" height="80" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </div>
+
+  <main>
+    <section class="question" aria-labelledby="qwh-title">
+      <div class="question-inner">
+        <h1 id="qwh-title">What was the day and time we first talked in WhatsApp in BR time?</h1>
+
+        <form id="qa-form" class="qa-form" novalidate>
+          <div class="fields">
+            <label class="field">
+              <span>Date</span>
+              <input id="dateInput" type="date" required>
+            </label>
+            <label class="field">
+              <span>Time</span>
+              <input id="timeInput" type="time" required>
+            </label>
+          </div>
+          <button id="submitAnswer" type="submit" class="btn-play">Check</button>
+          <div id="errorMsg" class="error-msg" role="alert" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section id="successOverlay" class="success-overlay" hidden aria-live="polite">
+      <div class="success-inner">
+        <canvas id="confettiCanvas"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script src="question.js" defer></script>
+</body>
+</html>
+
+
